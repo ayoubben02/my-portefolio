@@ -6,7 +6,7 @@
 
 body {
     background:
-      radial-gradient(#cfcc0c7a 2px, transparent 1px),
+      radial-gradient(#f9f518eb 1px, transparent 1px),
       linear-gradient(135deg, #1e1e1e, #3a3a3a);
     background-size: 100px 100px, 100% 100%;
     background-position: 0 0, center;
@@ -145,7 +145,7 @@ nav a:hover {
 .typing-text {
     font-size: 1.2rem;
     color: #3cd400;
-    background-color: #000;
+    background-color: transparent;
     font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
@@ -179,9 +179,10 @@ nav a:hover {
     width: 100%;
     max-width: 300px;
     border-radius: 70px 3px;
-    border: 15px solid #cfcc0c;
+    border: 5px solid #cfcc0c;
+    background:none;
 }
-
+    
 /* About section */
 .about {
     padding: 80px 20px;
