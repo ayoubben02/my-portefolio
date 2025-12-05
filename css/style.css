@@ -105,10 +105,6 @@ nav a:hover {
     color: #000;
 }
 
-.mobile-menu:hover .mobile-menu-content {
-    display: block;
-}
-
 .hero {
     display: flex;
     align-items: center;

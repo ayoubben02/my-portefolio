@@ -67,3 +67,11 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   
   typeLoop();
   
+  // Mobile menu toggle
+const mobileMenu = document.querySelector(".mobile-menu");
+const mobileContent = document.querySelector(".mobile-menu-content");
+
+mobileMenu.addEventListener("click", () => {
+  mobileContent.style.display =
+    mobileContent.style.display === "block" ? "none" : "block";
+});
