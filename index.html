@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Ayoub Bensassi - IT Technician & Web Developer Portfolio" />
   <title>Ayoub Bensassi | Portfolio</title>
+  <!-- Font Awesome for sleek icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -23,19 +25,18 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <div class="mobile-menu">
-        Menu ☰
-        <div class="mobile-menu-content">
-          <a href="#hero">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </div>
+    <div class="mobile-menu" id="mobile-menu-btn">
+      Menu ☰
+      <div class="mobile-menu-content" id="mobile-menu-content">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#languages">Languages</a>
+        <a href="#contact">Contact</a>
       </div>
-
-
+    </div>
   </nav>
 </header>
 
@@ -46,7 +47,7 @@
   <div class="intro">
     <h2>Hello,<br>I'm <span>Ayoub Bensassi</span></h2>
     <p class="subtitle">Specialized IT Technician & Web Developer</p>
-    <p class="typing-text">Turning ideas into efficient digital solutions...</p>
+    <p class="typing-text"></p>
   </div>
   <div class="photo">
     <img src="assets/monphoto.PNG" alt="Ayoub Bensassi portrait">
@@ -54,7 +55,7 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about">
+<section id="about" class="about reveal">
   <h2>About Me</h2>
   <div class="about-content">
     <p>
@@ -71,7 +72,7 @@
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="skills">
+<section id="skills" class="skills reveal">
   <h2>Skills</h2>
   <div class="skills-grid">
     <div class="skill-card">HTML5</div>
@@ -88,7 +89,7 @@
 </section>
 
 <!-- EDUCATION -->
-<section id="education" class="education">
+<section id="education" class="education reveal">
   <h2>Education</h2>
   <div class="timeline">
     <div class="timeline-item">
@@ -105,7 +106,7 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="experience">
+<section id="experience" class="experience reveal">
   <h2>Professional Experience</h2>
   <div class="experience-cards">
 
@@ -134,7 +135,7 @@
 </section>
 
 <!-- LANGUAGES -->
-<section id="languages" class="skills">
+<section id="languages" class="skills reveal">
   <h2>Languages</h2>
   <div class="skills-grid">
     <div class="skill-card">Arabic – Native</div>
@@ -144,29 +145,52 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact">
+<section id="contact" class="contact reveal">
   <h2>Contact Me</h2>
 
-  
-
-  <form action="https://formspree.io/f/myzwegnk" method="POST" class="contact-form reveal">
-      <input name="name" type="text" placeholder="Your Name" required />
-      <input name="email" type="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <form action="https://formspree.io/f/myzwegnk" method="POST" class="contact-form">
+    <input name="name" type="text" placeholder="Your Name" required />
+    <input name="email" type="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 </main>
 
-<footer>
-  <p>
-    📍 Casablanca, Morocco<br>
-    📧 bensassiayoub02@gmail.com<br>
-    📞 06 49 46 07 62<br>
-    🚗 Driving License: Category B
-  </p>
-  <p>&copy; 2025 Ayoub Bensassi — All rights reserved.</p>
+<!-- REDESIGNED FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+      <h3>Ayoub Bensassi</h3>
+      <p>Specialized IT Technician & Web Developer based in Morocco.</p>
+    </div>
+
+    <div class="footer-info-grid">
+      <div class="footer-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Casablanca, Morocco</span>
+      </div>
+      <div class="footer-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:bensassiayoub02@gmail.com">bensassiayoub02@gmail.com</a>
+      </div>
+      <div class="footer-item">
+        <i class="fas fa-phone-alt"></i>
+        <a href="tel:0649460762">06 49 46 07 62</a>
+      </div>
+      <div class="footer-item">
+        <i class="fas fa-id-card"></i>
+        <span>Driving License: Category B</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Ayoub Bensassi — All rights reserved.</p>
+  </div>
 </footer>
 
 <script src="js/script.js"></script>
